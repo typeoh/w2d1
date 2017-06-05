@@ -7,6 +7,7 @@ var requestOptions = {
 
 function getAndPrintHtmlChunks() {
 
+
   // notice that https.get takes a callback with one parameter -
   // response, which is a Stream that represents the HTTP response
   https.get(requestOptions, function (response) {
