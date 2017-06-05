@@ -4,7 +4,6 @@ var requestOptions = {
     path: '/http-examples/step1.html'
   };
 
-// function getAndPrintHTML (options) {
 function getHTML (options, callback) {
     var buffer = "";
     https.get(options, function (response) {
@@ -23,8 +22,3 @@ function getHTML (options, callback) {
 getHTML(requestOptions,function(html){
   console.log(html);
 });
-
-
-    // the callback is invoked when all of the data has been received
-    // (the `end` of the stream)
-
